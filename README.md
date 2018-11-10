@@ -13,3 +13,7 @@ For updating this I need to use
 ```
 sudo git add . && sudo git commit; sudo  git pull && sudo git push
 ```
+
+## Goal
+My goal is to make a salt like [Tero Karvinen sirotin](https://github.com/terokarvinen/sirotin)
+That when I try new Linux distros I can always just run a local salt putting everything in same state 
