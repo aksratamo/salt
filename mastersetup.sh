@@ -10,4 +10,4 @@ echo "Installing git and salt..."
 sudo apt-get install git salt-master salt-minion -y -qq >> /dev/null
 echo "Cloning repository..."
 cd /srv/
-git clone https://github.com/aksratamo/salt
+sudo git clone https://github.com/aksratamo/salt
