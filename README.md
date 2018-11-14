@@ -8,7 +8,7 @@ You can find my work relating to this project at
 
 ## installation
 ```bash
-wget https://github.com/aksratamo/salt/blob/master/mastersetup.sh
+wget https://github.com/aksratamo/salt/mastersetup.sh
 bash mastersetup.sh
 ```
 ## FAQ
