@@ -1,9 +1,9 @@
 #!/bin/bash
-#Simple logging server
+#installs git and saltmaster&minion sets keyboard to fi
 
 echo "Setting keyboard layout to fi-FI"
 setxkbmap fi
-cd ~
+cd
 echo "Updating packages..."
 sudo apt-get update -qq >> /dev/null
 echo "Installing git and salt..."
