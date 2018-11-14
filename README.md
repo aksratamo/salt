@@ -6,7 +6,12 @@ My goal is to make an ever growing [SaltStack](https://www.saltstack.com/) confi
 You can find my work relating to this project at 
 <https://akseliratamo.fi>
 
-# FAQ
+## installation
+```bash
+wget https://github.com/aksratamo/salt/blob/master/mastersetup.sh
+bash mastersetup.sh
+```
+## FAQ
 ## How it works
 When you clone this repo it will create a salt/* folder structure what you should put under /srv/* in root. Because Salt is run as root we need in this case run git also as root.
 For updating this I need to use 
@@ -14,6 +19,6 @@ For updating this I need to use
 sudo git add . && sudo git commit; sudo  git pull && sudo git push
 ```
 
-## Goal
+### Goal
 My goal is to make a salt like [Tero Karvinen sirotin](https://github.com/terokarvinen/sirotin)
 That when I try new Linux distros I can always just run a local salt putting everything in same state 
