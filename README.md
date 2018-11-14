@@ -8,7 +8,7 @@ You can find my work relating to this project at
 
 ## installation
 ```bash
-wget https://github.com/aksratamo/salt/mastersetup.sh
+wget https://raw.githubusercontent.com/aksratamo/salt/master/mastersetup.sh
 bash mastersetup.sh
 ```
 ## FAQ
