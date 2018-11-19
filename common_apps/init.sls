@@ -1,5 +1,5 @@
-keepassxc:
-  pkg.installed  
+#keepassxc:
+#  pkg.installed  
   
 sl:
   pkg.installed
