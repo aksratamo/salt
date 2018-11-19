@@ -13,8 +13,9 @@ sudo git clone https://github.com/aksratamo/salt
 echo "Writing salt settings to file and restarting salt-minion..."
 sudo echo -e "master: localhost\nid: localminion" | sudo tee /etc/salt/minion
 sudo systemctl restart salt-minion
+echo "Adding minion to master"
 sleep 5
 sudo salt-key -A
-sleep 3
+sleep 5
 echo "Running highstate"
 sudo salt '*' state.highstate
