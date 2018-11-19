@@ -20,4 +20,4 @@ read SystemID
 echo "Writing salt settings to file and restarting salt-minion..."
 sudo echo -e "master: $MasterIP\nid: ws-$SystemID" | sudo tee /etc/salt/minion
 sudo systemctl restart salt-minion
-echo "Please run sudo salt keys -A on your master"
+echo "Please run sudo salt-key -A on your master"
