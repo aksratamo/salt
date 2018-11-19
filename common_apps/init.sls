@@ -5,3 +5,4 @@ sl:
   pkg.installed
 
 tree:
+  pkg.installed
