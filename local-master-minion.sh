@@ -1,8 +1,6 @@
 #!/bin/bash
 #installs git and saltmaster&minion sets keyboard to fi
 
-echo "Setting keyboard layout to fi-FI"
-setxkbmap fi
 cd
 echo "Updating packages..."
 sudo apt-get update -qq >> /dev/null
@@ -18,4 +16,5 @@ sudo systemctl restart salt-minion
 sleep 5
 sudo salt-key -A
 sleep 3
+echo "Running highstate"
 sudo salt '*' state.highstate
