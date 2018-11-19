@@ -1,0 +1,11 @@
+#!/bin/bash
+# this will destroy and put up vagrand again and ssh it straght back for fast salt testing.
+echo "Vagrant destroy"
+vagrant destroy 
+
+wait
+echo "Vagrant up"
+vagrant up 
+wait
+echo "Vagrant ssh"
+vagrant ssh 
