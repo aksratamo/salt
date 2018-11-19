@@ -3,3 +3,5 @@ keepassxc:
   
 sl:
   pkg.installed
+
+tree:
