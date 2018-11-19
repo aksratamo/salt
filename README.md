@@ -6,13 +6,16 @@ My goal is to make an ever growing [SaltStack](https://www.saltstack.com/) confi
 You can find my work relating to this project at 
 <https://akseliratamo.fi>
 
-## installation
+## Installation
+### Setting up Master and slave on local mashine and running highstate.
+```bash
+wget https://raw.githubusercontent.com/aksratamo/salt/master/local-master-minion.sh
+sudo bash local-master-minion.sh
+```
+### Installing master only
 ```bash
 wget https://raw.githubusercontent.com/aksratamo/salt/master/mastersetup.sh
 bash mastersetup.sh
-
-wget https://raw.githubusercontent.com/aksratamo/salt/master/local-master-minion.sh
-sudo bash local-master-minion.sh
 ```
 ## FAQ
 ## How it works
