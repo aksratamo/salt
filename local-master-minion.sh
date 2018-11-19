@@ -16,6 +16,6 @@ sudo systemctl restart salt-minion
 echo "Adding minion to master"
 sleep 5
 sudo salt-key -A
-sleep 5
+sleep 10
 echo "Running highstate"
 sudo salt '*' state.highstate
