@@ -15,6 +15,6 @@ sudo git clone https://github.com/aksratamo/salt
 echo "Writing salt settings to file and restarting salt-minion..."
 sudo echo -e "master: localhost\nid: localminion" | sudo tee /etc/salt/minion
 sudo systemctl restart salt-minion
-wait
+sleep 5
 sudo salt-key -A
 sudo salt '*' state.highstate
