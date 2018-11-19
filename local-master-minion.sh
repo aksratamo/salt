@@ -17,4 +17,5 @@ sudo echo -e "master: localhost\nid: localminion" | sudo tee /etc/salt/minion
 sudo systemctl restart salt-minion
 sleep 5
 sudo salt-key -A
+sleep 3
 sudo salt '*' state.highstate
