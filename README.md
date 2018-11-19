@@ -11,7 +11,7 @@ You can find my work relating to this project at
 wget https://raw.githubusercontent.com/aksratamo/salt/master/mastersetup.sh
 bash mastersetup.sh
 
-https://raw.githubusercontent.com/aksratamo/salt/master/local-master-minion.sh
+wget https://raw.githubusercontent.com/aksratamo/salt/master/local-master-minion.sh
 sudo bash local-master-minion.sh
 ```
 ## FAQ
