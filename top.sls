@@ -4,6 +4,6 @@ base:
     - vlc
   'local*':
     - helloworld
-    - common_apps
+    - linux_apps
   'worja':
     - win_apps
