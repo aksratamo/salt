@@ -4,10 +4,10 @@ linux_apps:
       - htop
       - tree
       - neofetch
-#      - keepassxc
+      - keepassxc
       - firefox
 
 
- /etc/firefox/syspref.js
+/etc/firefox/syspref.js
    file.managed:
     - source: salt://linux_apps/sysprefs.js
