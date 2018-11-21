@@ -7,16 +7,13 @@ You can find my work relating to this project at
 <https://akseliratamo.fi>
 
 ## Installation
-### Setting up Master and slave on local mashine and running highstate.
+### Setting up Master and slave on local mashine and running highstate. (first line only if you want finnish keyboard)
 ```bash
+setxkbmap fi
 wget https://raw.githubusercontent.com/aksratamo/salt/master/local-master-minion.sh
 sudo bash local-master-minion.sh
 ```
-### Installing master only
-```bash
-wget https://raw.githubusercontent.com/aksratamo/salt/master/mastersetup.sh
-bash mastersetup.sh
-```
+
 ## FAQ
 ## How it works
 When you clone this repo it will create a salt/* folder structure what you should put under /srv/* in root. Because Salt is run as root we need in this case run git also as root.
