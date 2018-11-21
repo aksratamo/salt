@@ -29,11 +29,7 @@ pref(̈́'toolkit.telemetry.unified', false);
 pref(̈́'toolkit.telemetry.updatePing.enabled', false);
 
 
-pref(̈́'', );
-pref(̈́'', );
-pref(̈́'', );
-
-
+pref(̈́'browser.startup.homepage', 'https://duckduckgo.com/');
 
 
 
