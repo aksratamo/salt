@@ -10,4 +10,4 @@ linux_apps:
 
 # /etc/firefox/syspref.js
 #   file.managed:
-    - source: salt://helloworld/helloworld.txt
+#    - source: salt://helloworld/helloworld.txt
