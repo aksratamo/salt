@@ -8,6 +8,6 @@ linux_apps:
       - firefox
 
 
-/etc/firefox/syspref.js
+/etc/firefox/syspref.js:
    file.managed:
-    - source: salt://linux_apps/sysprefs.js
+    - source: salt://linux_apps/syspref.js
