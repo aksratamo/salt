@@ -13,23 +13,23 @@ pref('mousewheel.min_line_scroll_amount', 80);
 
 // Telemetry used this as reference https://support.mozilla.org/en-US/questions/1197144
 // main setting to disable it
-pref(̈́'datareporting.healthreport.uploadEnabled', false);
+pref('datareporting.healthreport.uploadEnabled', false);
 
 pref('toolkit.telemetry.archive.enabled', false);
-pref(̈́'toolkit.telemetry.bhrPing.enabled', false);
-pref(̈́'toolkit.telemetry.firstShutdownPing.enabled', false);
-pref(̈́'toolkit.telemetry.hybridContent.enabled', false);
-pref(̈́'toolkit.telemetry.newProfilePing.enabled', false);
-pref(̈́'toolkit.telemetry.reportingpolicy.firstRun', false);
-pref(̈́'browser.newtabpage.activity-stream.telemetry', false);
-pref(̈́'toolkit.telemetry.server', ' ');
-pref(̈́'toolkit.telemetry.shutdownPingSender.enabled', false);
-pref(̈́'toolkit.telemetry.shutdownPingSender.enabledFirstSession', true);
-pref(̈́'toolkit.telemetry.unified', false);
-pref(̈́'toolkit.telemetry.updatePing.enabled', false);
+pref('toolkit.telemetry.bhrPing.enabled', false);
+pref('toolkit.telemetry.firstShutdownPing.enabled', false);
+pref('toolkit.telemetry.hybridContent.enabled', false);
+pref('toolkit.telemetry.newProfilePing.enabled', false);
+pref('toolkit.telemetry.reportingpolicy.firstRun', false);
+pref('browser.newtabpage.activity-stream.telemetry', false);
+pref('toolkit.telemetry.server', ' ');
+pref('toolkit.telemetry.shutdownPingSender.enabled', false);
+pref('toolkit.telemetry.shutdownPingSender.enabledFirstSession', true);
+pref('toolkit.telemetry.unified', false);
+pref('toolkit.telemetry.updatePing.enabled', false);
 
 
-pref(̈́'browser.startup.homepage', 'https://duckduckgo.com/');
+pref('browser.startup.homepage', 'https://duckduckgo.com/');
 
 
 
