@@ -5,9 +5,9 @@ linux_apps:
       - tree
       - neofetch
 #      - keepassxc
-#      - firefox
+      - firefox
 
 
-# /etc/firefox/syspref.js
-#   file.managed:
-#    - source: salt://linux_apps/sysprefs.js
+ /etc/firefox/syspref.js
+   file.managed:
+    - source: salt://linux_apps/sysprefs.js
