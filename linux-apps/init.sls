@@ -6,7 +6,6 @@ linux_apps:
       - firefox
       - ufw
 
-
 #Enable Firewall and configs
 /etc/ufw/ufw.conf:
   file.managed:

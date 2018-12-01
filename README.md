@@ -7,6 +7,16 @@ You can find my work relating to this project at
 <https://akseliratamo.fi>
 
 ## Installation
+### Distrohoppers tool for Privacy minded Ubuntu based distros
+It will remove telemetry from firefox, adjust the scroll speed, remove title bar. And install privacy tools like nextcloud-client, keepass and configure UFW
+Dont copy the first line if you dont want Finnish keyboard.
+```bash
+setxkbmap fi
+https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
+sudo bash linux-advanced.sh
+``` 
+
+
 ### Setting up Master and slave on local mashine and running highstate. (first line only if you want finnish keyboard)
 ```bash
 setxkbmap fi

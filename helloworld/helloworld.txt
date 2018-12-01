@@ -1,3 +1,4 @@
 Hello world!
+Your Saltstack is working. Great!
 See you at https://akseliratamo.fi
 

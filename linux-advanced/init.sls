@@ -8,4 +8,6 @@ linux-advanced:
     - pkgs:
       - neofetch
       - keepassxc
-
+      - httpie
+      - nextcloud-client
+      
