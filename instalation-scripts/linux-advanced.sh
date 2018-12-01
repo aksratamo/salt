@@ -11,4 +11,7 @@ sudo git clone https://github.com/aksratamo/salt
 
 #Running highstate and advanced-linux
 sudo salt-call --local state.apply
-sudo salt-call --local state.apply
+sudo salt-call --local state.apply linux-apps
+sudo salt-call --local state.apply linux-advanced
+
+

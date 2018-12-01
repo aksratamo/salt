@@ -1,39 +1,39 @@
-*filter                                                                                                  │2018-12-01+10:04:17.4972217550 /home/vagrant/srv
-:ufw-user-input - [0:0]                                                                                  │2018-12-01+10:04:34.1415397570 /home/vagrant/.local
-:ufw-user-output - [0:0]                                                                                 │2018-12-01+10:04:34.1415397570 /home/vagrant/.local/share
-:ufw-user-forward - [0:0]                                                                                │2018-12-01+10:04:34.1415397570 /home/vagrant/.local/share/nano
-:ufw-before-logging-input - [0:0]                                                                        │2018-12-01+10:04:54.2475877570 /home/vagrant/srv/salt/top.sls
-:ufw-before-logging-output - [0:0]                                                                       │2018-12-01+10:05:13.3531357580 /home/vagrant/srv/salt
-:ufw-before-logging-forward - [0:0]                                                                      │2018-12-01+10:05:42.8999017640 /home/vagrant/srv/salt/neofetch
-:ufw-user-logging-input - [0:0]                                                                          │2018-12-01+10:05:42.8999017640 /home/vagrant/srv/salt/neofetch/init.sls
-:ufw-user-logging-output - [0:0]                                                                         │2018-12-01+10:22:03.7220677510 /home/vagrant/.config
-:ufw-user-logging-forward - [0:0]                                                                        │2018-12-01+10:22:03.7220677510 /home/vagrant/.config/neofetch
-:ufw-after-logging-input - [0:0]                                                                         │2018-12-01+10:22:03.7220677510 /home/vagrant/.config/neofetch/config.conf
-:ufw-after-logging-output - [0:0]                                                                        │2018-12-01+10:28:53.5228657520 /home/vagrant/.bash_history
-:ufw-after-logging-forward - [0:0]                                                                       │2018-12-01+11:13:40.4781139750 /home/vagrant
-:ufw-logging-deny - [0:0]                                                                                │2018-12-01+11:13:40.4781139750 /home/vagrant/.gitconfig
-:ufw-logging-allow - [0:0]                                                                               │vagrant@ubuntu-bionic:/srv/salt$ sudo find /etc/ -printf "%T+ %p\n"|sort|tail -15
-:ufw-user-limit - [0:0]                                                                                  │sudo find /etc/ -printf "%T+ %p\n"|sort|tail -15
-:ufw-user-limit-accept - [0:0]                                                                           │2018-12-01+10:21:36.2883577520 /etc/apparmor.d/abstractions/ubuntu-browsers.d
-### RULES ###                                                                                            │2018-12-01+10:21:46.3253737600 /etc/ld.so.cache
-                                                                                                         │2018-12-01+10:21:46.3333777590 /etc/
-### tuple ### allow tcp 22 0.0.0.0/0 any 0.0.0.0/0 in                                                    │2018-12-01+10:21:48.2303257510 /etc/firefox
--A ufw-user-input -p tcp --dport 22 -j ACCEPT                                                            │2018-12-01+10:21:48.2303257510 /etc/firefox/syspref.js
-                                                                                                         │2018-12-01+10:53:39.4694677520 /etc/apt
-### END RULES ###                                                                                        │2018-12-01+10:53:39.4774717510 /etc/apt/sources.list.d
-                                                                                                         │2018-12-01+10:53:39.4774717510 /etc/apt/sources.list.save
-### LOGGING ###                                                                                          │2018-12-01+10:53:39.9016837510 /etc/apt/trusted.gpg.d
--A ufw-after-logging-input -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10    │2018-12-01+10:53:39.9016837510 /etc/apt/trusted.gpg.d/nextcloud-devs_ubuntu_client.gpg
--A ufw-after-logging-forward -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10  │2018-12-01+10:53:39.9056857510 /etc/apt/sources.list
--I ufw-logging-deny -m conntrack --ctstate INVALID -j RETURN -m limit --limit 3/min --limit-burst 10     │2018-12-01+10:53:39.9056857510 /etc/apt/sources.list.d/nextcloud-devs-ubuntu-client-bionic.list
--A ufw-logging-deny -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10           │2018-12-01+11:20:13.4544897410 /etc/ufw/ufw.conf
--A ufw-logging-allow -j LOG --log-prefix "[UFW ALLOW] " -m limit --limit 3/min --limit-burst 10          │2018-12-01+11:20:13.8586917260 /etc/ufw/user.rules
-### END LOGGING ###                                                                                      │2018-12-01+11:20:13.8586917260 /etc/ufw/user6.rules
-                                                                                                         │vagrant@ubuntu-bionic:/srv/salt$ sudoedit liwords=("${@:3:2}")
-### RATE LIMITING ###                                                                                    │cword="$3"
--A ufw-user-limit -m limit --limit 3/minute -j LOG --log-prefix "[UFW LIMIT BLOCK] "                     │cur="$3"
--A ufw-user-limit -j REJECT                                                                              │cur="$3"
--A ufw-user-limit-accept -j ACCEPT                                                                       │cword="$3"
-### END RATE LIMITING ###                                                                                │prev="$3"
-COMMIT                                                                                                   │words=("${@:3:2}")
-                
+*filter
+:ufw-user-input - [0:0]
+:ufw-user-output - [0:0]
+:ufw-user-forward - [0:0]
+:ufw-before-logging-input - [0:0]
+:ufw-before-logging-output - [0:0]
+:ufw-before-logging-forward - [0:0]
+:ufw-user-logging-input - [0:0]
+:ufw-user-logging-output - [0:0]
+:ufw-user-logging-forward - [0:0]
+:ufw-after-logging-input - [0:0]
+:ufw-after-logging-output - [0:0]
+:ufw-after-logging-forward - [0:0]
+:ufw-logging-deny - [0:0]
+:ufw-logging-allow - [0:0]
+:ufw-user-limit - [0:0]
+:ufw-user-limit-accept - [0:0]
+### RULES ###
+
+### tuple ### allow tcp 22 0.0.0.0/0 any 0.0.0.0/0 in
+-A ufw-user-input -p tcp --dport 22 -j ACCEPT
+
+### END RULES ###
+
+### LOGGING ###
+-A ufw-after-logging-input -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10
+-A ufw-after-logging-forward -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10
+-I ufw-logging-deny -m conntrack --ctstate INVALID -j RETURN -m limit --limit 3/min --limit-burst 10
+-A ufw-logging-deny -j LOG --log-prefix "[UFW BLOCK] " -m limit --limit 3/min --limit-burst 10
+-A ufw-logging-allow -j LOG --log-prefix "[UFW ALLOW] " -m limit --limit 3/min --limit-burst 10
+### END LOGGING ###
+
+### RATE LIMITING ###
+-A ufw-user-limit -m limit --limit 3/minute -j LOG --log-prefix "[UFW LIMIT BLOCK] "
+-A ufw-user-limit -j REJECT
+-A ufw-user-limit-accept -j ACCEPT
+### END RATE LIMITING ###
+COMMIT
+
