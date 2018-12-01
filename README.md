@@ -25,12 +25,16 @@ sudo bash local-master-minion.sh
 ```
 
 ## FAQ
-## How it works
+### How it works
 When you clone this repo it will create a salt/* folder structure what you should put under /srv/* in root. Because Salt is run as root we need in this case run git also as root.
 For updating this I need to use 
 ```
 sudo git add . && sudo git commit; sudo  git pull && sudo git push
 ```
+### Wich Distros this works on?
+I have tested it with Kubuntu 18.04 and 18.10, Ubuntu and KdePlasma. 
+The apt install for saltstack does not work for 18.10 based distros so I switched it around for the multiplatform installer using curl.
+It works on both ubuntus but on Plasma it says "error: No dependencies instalation function found" when trying to instal salt. I need to study this further.
 
 ### Goal
 My goal is to make a salt like [Tero Karvinen sirotin](https://github.com/terokarvinen/sirotin)
