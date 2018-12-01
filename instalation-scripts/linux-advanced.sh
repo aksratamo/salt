@@ -4,7 +4,7 @@ cd
 echo "Updating packages..."
 sudo apt-get update -qq >> /dev/null
 echo "Installing git and salt..."
-sudo apt-get install git -y -qq >> /dev/null
+sudo apt-get install git curl -y -qq >> /dev/null
 curl -L https://bootstrap.saltstack.com -o install_salt.sh
 sudo sh install_salt.sh -P
 echo "Cloning repository..."
