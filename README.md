@@ -12,7 +12,7 @@ It will remove telemetry from firefox, adjust the scroll speed, remove title bar
 Dont copy the first line if you dont want Finnish keyboard.
 ```bash
 setxkbmap fi
-https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
+wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
 sudo bash linux-advanced.sh
 ``` 
 
