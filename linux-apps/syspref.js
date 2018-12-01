@@ -30,5 +30,8 @@ pref('toolkit.telemetry.updatePing.enabled', false);
 
 
 pref('browser.startup.homepage', 'https://duckduckgo.com/');
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> fa7a6d65470b60c1574bb84e6d2ff2ec5ec5a5f1
