@@ -1,23 +1,28 @@
 linux_apps:
   pkg.installed:
+    - show_changes: False
     - pkgs:
       - htop
       - tree
       - firefox
       - ufw
+      - vlc
 
 #Enable Firewall and configs
 /etc/ufw/ufw.conf:
   file.managed:
     - source: salt://linux-apps/ufw.conf
+    - show_changes: False
  
 /etc/ufw/user.rules:
   file.managed:
     - source: salt://linux-apps/user.rules
+    - show_changes: False
 
 /etc/ufw/user6.rules:
   file.managed:
     - source: salt://linux-apps/user6.rules
+    - show_changes: False
 
 ufwservice:
   service.running:

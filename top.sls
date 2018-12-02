@@ -1,12 +1,14 @@
 base:
   '*':
     - helloworld
-    - vlc
+
   'local*':
-    - helloworld
     - linux-apps
+
   'worja':
+    - vlc
     - win_apps
+
   'linux-advanced':
     - linux-advanced
     - linux-apps
