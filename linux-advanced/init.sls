@@ -10,4 +10,5 @@ linux-advanced:
       - keepassxc
       - httpie
       - nextcloud-client
+      - qbittorrent
       
