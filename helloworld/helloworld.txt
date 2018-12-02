@@ -1,4 +1,7 @@
 Hello world!
 Your Saltstack is working. Great!
+
 See you at https://akseliratamo.fi
 
+This file also is the placeholder for checking that you dont run
+ the instalation script more than once. 

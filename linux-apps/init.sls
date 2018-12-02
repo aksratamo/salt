@@ -31,6 +31,12 @@ ufwservice:
 
 #Firefox preferences
 /etc/firefox/syspref.js:
-   file.managed:
-     - source: salt://linux-apps/syspref.js
+  file.managed:
+    - source: salt://linux-apps/syspref.js
 
+
+#Add someonewhocares host list to hostfile
+/etc/hosts:
+  file.managed:
+    - source: salt://hosts
+    - show_changes: False

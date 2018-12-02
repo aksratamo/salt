@@ -4,6 +4,9 @@ base:
     - vlc
   'local*':
     - helloworld
-    - linux_apps
+    - linux-apps
   'worja':
     - win_apps
+  'linux-advanced':
+    - linux-advanced
+    - linux-apps
