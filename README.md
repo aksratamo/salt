@@ -45,15 +45,15 @@ It works on both ubuntus but on Plasma it says "error: No dependencies instalati
 ### Is there a full list of changes this makes?
 Here: 
 Installs these aplications
-      - neofetch
-      - keepassxc
-      - httpie
-      - nextcloud-client (adds offical PPA)
-      - qbittorrent      - htop
-      - tree
-      - firefox 
-      - ufw (enables it only ssh open)
-      - vlc
+* neofetch
+* keepassxc
+* httpie
+* nextcloud-client (adds offical PPA)
+* qbittorrent      - htop
+* tree
+* firefox 
+* ufw (enables it only ssh open)
+* vlc
 Firefox removes telemetry makes scroll wheel faster and smoother, disables title bar, enables mouse middle click autoscrolling, puts the white default theme on, removes the warning when closing firefox with multiple tabs open.   
 
 ### How did this start?
