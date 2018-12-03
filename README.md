@@ -57,6 +57,8 @@ Installs these aplications
 
 Firefox removes telemetry makes scroll wheel faster and smoother, disables title bar, enables mouse middle click autoscrolling, puts the white default theme on, removes the warning when closing firefox with multiple tabs open.   
 
+### What are those windows files?
+That where part of the schoolproject where we needed to configure salt for windows also. Thats not my main aim so I will probably clean them at some point. Or I will make an own instalation version for windows. At the moment it installs NotepadPlusPlus, chocolatey, VLC and with chocolatey it installs autohotkey.
 ### How did this start?
 This is my Linux server salt school project
 I'm doing a advanced linux server management [course](http://terokarvinen.com/2018/aikataulu-%e2%80%93-palvelinten-hallinta-ict4tn022-3004-ti-ja-3002-to-%e2%80%93-loppukevat-2018-5p)
