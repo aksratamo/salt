@@ -21,4 +21,5 @@ cd salt/
 
 
 echo "===> Running highstate and advanced-linux, Please wait <==="
-sudo salt-call --local state.apply --state-output=terse
+sudo salt-call --local state.apply 
+# --state-output=terse
