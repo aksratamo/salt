@@ -11,7 +11,7 @@ sudo apt-get update -qq >> /dev/null
 echo "===> Installing git and salt... <==="
 sudo apt-get install git curl salt-minion -y 
 curl -L https://bootstrap.saltstack.com -o install_salt.sh
-sudo sh install_salt.sh -P -qq >> /dev/null
+sudo sh install_salt.sh -P 
 sudo echo -e "master: localhost\nid: linux-advanced" | sudo tee /etc/salt/minion
 echo "===> Cloning repository... <==="
 cd /srv/
