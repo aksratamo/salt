@@ -49,7 +49,8 @@ Installs these aplications
 * keepassxc
 * httpie
 * nextcloud-client (adds offical PPA)
-* qbittorrent      - htop
+* qbittorrent      
+* htop
 * tree
 * firefox 
 * ufw (enables it only ssh open)
