@@ -13,11 +13,11 @@ echo "===> Updating packages... <==="
 sudo apt-get update 
 echo "===> Installing git and salt... <==="
 sudo apt-get install git curl salt-minion -y 
-if [ ! -d /srv/]; then
-echo "===> Installing  salt-minion with workaround bootstrap instalation... <==="
-curl -L https://bootstrap.saltstack.com -o install_salt.sh
-sudo sh install_salt.sh -P 
-fi
+#if [ ! -d /srv/]; then
+#echo "===> Installing  salt-minion with workaround bootstrap instalation... <==="
+#curl -L https://bootstrap.saltstack.com -o install_salt.sh
+#sudo sh install_salt.sh -P 
+#fi
 sudo echo -e "master: localhost\nid: linux-advanced" | sudo tee /etc/salt/minion
 echo "===> Cloning repository... <==="
 cd /srv/
