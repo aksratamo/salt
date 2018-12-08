@@ -5,9 +5,12 @@ if [ -f /tmp/helloworld.txt ]; then
     echo "===> This install script has already been run! It is intended to be run only once <==="
     exit 0
 fi
+wget -O - https://repo.saltstack.com/apt/debian/9/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
+cd /etc/apt/sources.list.d/
+wget https://raw.githubusercontent.com/aksratamo/salt/master/saltstack.list
 cd
 echo "===> Updating packages... <==="
-sudo apt-add-repository multiverse && sudo apt-get update 
+sudo apt-get update 
 echo "===> Installing git and salt... <==="
 sudo apt-get install git curl salt-minion -y 
 if [ ! -d /srv/]; then
