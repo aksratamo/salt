@@ -7,7 +7,7 @@ if [ -f /tmp/helloworld.txt ]; then
 fi
 cd
 echo "===> Updating packages... <==="
-sudo apt-get update -qq >> /dev/null
+sudo apt-get update 
 echo "===> Installing git and salt... <==="
 sudo apt-get install git curl salt-minion -y 
 if [ ! -d /srv/]; then
