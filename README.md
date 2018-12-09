@@ -55,6 +55,7 @@ Installs these aplications
 * firefox 
 * ufw (enables it only ssh open)
 * vlc
+* stacer (system monitor)
 
 Firefox removes telemetry makes scroll wheel faster and smoother, disables title bar, enables mouse middle click autoscrolling, puts the white default theme on, removes the warning when closing firefox with multiple tabs open.   
 
