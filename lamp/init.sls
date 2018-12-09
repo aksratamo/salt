@@ -3,6 +3,7 @@ lamp:
    - pkgs:
      - apache2
      - libapache2-mod-php
+     - php-mysql
      - mariadb-client
      - mariadb-server
      - ufw
