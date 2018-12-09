@@ -5,6 +5,10 @@ nextcloud-ppa:
 keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
+    
+stacer-ppa:
+  pkgrepo.managed:
+    - ppa:oguzhaninan/stacer
 
 signal-desktop:
   pkgrepo.managed:
@@ -22,3 +26,4 @@ linux-advanced:
       - nextcloud-client
       - qbittorrent
       - signal-desktop
+      - stacer
