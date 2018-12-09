@@ -8,7 +8,7 @@ keepass-ppa:
     
 stacer-ppa:
   pkgrepo.managed:
-    - ppa:oguzhaninan/stacer
+    - ppa: oguzhaninan/stacer
 
 signal-desktop:
   pkgrepo.managed:
