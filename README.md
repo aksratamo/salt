@@ -8,7 +8,7 @@ It will remove telemetry from firefox, adjust the scroll speed, remove title bar
 
 ## Instalation
 ### For masterless local salt (my preference)
-(Copy first line only if you want to 
+(Copy first line only if you want to have finnish keyboard)
 ```bash
 setxkbmap fi
 wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
