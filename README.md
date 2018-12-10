@@ -14,7 +14,14 @@ setxkbmap fi
 wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
 sudo bash linux-advanced.sh
 ``` 
+### For basic linux users without more advanced tools like keepass and nextcloud. 
+Most important things are removing firefox telemetry and fixing scrolling on it, Hostfile and firewall.
 
+```bash
+setxkbmap fi
+wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
+sudo bash linux-basic.sh
+``` 
 
 ### Setting up Master and slave on local mashine and running highstate. 
 ```bash
