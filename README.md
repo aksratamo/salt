@@ -19,7 +19,7 @@ Most important things are removing firefox telemetry and fixing scrolling on it,
 
 ```bash
 setxkbmap fi
-wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
+https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-basic.sh
 sudo bash linux-basic.sh
 ``` 
 
