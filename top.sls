@@ -2,7 +2,7 @@ base:
   '*':
     - helloworld
 
-  'local*':
+  'linux*':
     - linux-apps
 
   'worja':
@@ -11,4 +11,4 @@ base:
 
   'linux-advanced':
     - linux-advanced
-    - linux-apps
+    
