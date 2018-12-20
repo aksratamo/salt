@@ -1,8 +1,3 @@
-#libreoffice ppa for the newest libreoffice version
-libreoffice-ppa:
-  pkgrepo.managed:
-    - ppa: libreoffice/ppa
-
 linux_apps:
   pkg.installed:
     - show_changes: False
