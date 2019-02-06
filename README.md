@@ -23,12 +23,6 @@ wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts
 sudo bash linux-basic.sh
 ``` 
 
-### Setting up Master and slave on local mashine and running highstate. 
-```bash
-setxkbmap fi
-wget https://raw.githubusercontent.com/aksratamo/salt/master/local-master-minion.sh
-sudo bash local-master-minion.sh
-```
 
 ## FAQ
 
@@ -78,6 +72,7 @@ You can find my work relating to this project at
 
 
 ##### Reference sources:
-<https://github.com/jisosomppi/log-analysis/blob/master/LICENSE>
-
+An other school project where I borrowed the idea of installing local master minion.<https://github.com/jisosomppi/log-analysis>
+My project is mostly taken inspiration from my teachers masterless installation.
 <https://github.com/terokarvinen/sirotin>
+My own website<https://akseliratamo.fi>
