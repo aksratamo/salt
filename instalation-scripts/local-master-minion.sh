@@ -1,5 +1,7 @@
 #!/bin/bash
 #installs git and saltmaster&minion sets keyboard to fi
+# refrences https://github.com/jisosomppi/log-analysis/blob/master/salt/serversetup.sh 
+# https://github.com/jisosomppi/log-analysis/blob/master/salt/clientsetup.sh
 
 cd
 echo "Updating packages..."
