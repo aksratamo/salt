@@ -72,7 +72,7 @@ You can find my work relating to this project at
 
 
 ##### Reference sources:
-An other school project where I borrowed the idea of installing local master minion.<https://github.com/jisosomppi/log-analysis>
+An other school project where I borrowed the idea of installing local master minion.<https://github.com/jisosomppi/log-analysis>  
 My project is mostly taken inspiration from my teachers masterless installation.
-<https://github.com/terokarvinen/sirotin>
+<https://github.com/terokarvinen/sirotin>  
 My own website<https://akseliratamo.fi>
