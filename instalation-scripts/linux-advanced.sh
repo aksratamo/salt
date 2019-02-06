@@ -16,7 +16,7 @@ sudo apt-get update
 echo "="
 echo "===> Installing git and salt... <==="
 echo "="
-sudo apt-get install git curl salt-minion -y 
+sudo apt-get install git salt-minion -y 
 #if [ ! -d /srv/]; then
 #echo "===> Installing  salt-minion with workaround bootstrap instalation... <==="
 #curl -L https://bootstrap.saltstack.com -o install_salt.sh
