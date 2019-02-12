@@ -2,6 +2,10 @@ nextcloud-ppa:
   pkgrepo.managed:
     - ppa: nextcloud-devs/client
 
+brackets-ppa:
+  pkgrepo.managed:
+    - ppa: webupd8team/brackets
+
 keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
@@ -21,6 +25,7 @@ signal-desktop:
 linux-advanced:
   pkg.installed:
     - pkgs:
+      - brackets
       - neofetch
       - keepassxc
       - httpie
@@ -28,3 +33,4 @@ linux-advanced:
       - qbittorrent
       - signal-desktop
 #      - stacer
+
