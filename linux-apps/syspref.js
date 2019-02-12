@@ -27,6 +27,9 @@ pref('toolkit.telemetry.shutdownPingSender.enabled', false);
 pref('toolkit.telemetry.shutdownPingSender.enabledFirstSession', true);
 pref('toolkit.telemetry.unified', false);
 pref('toolkit.telemetry.updatePing.enabled', false);
+pref('privacy.donottrackheader.enabled', true);
+pref('browser.contentblocking.category', strict);
+
 
 
 pref('browser.startup.homepage', 'https://duckduckgo.com/');
