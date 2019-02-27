@@ -2,18 +2,18 @@ nextcloud-ppa:
   pkgrepo.managed:
     - ppa: nextcloud-devs/client
 
-brackets-ppa:
+atom-ppa:
   pkgrepo.managed:
-    - ppa: webupd8team/brackets
+    - ppa: webupd8team/atom   
 
 keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
 
-# Removed stacer for now because it does not work yet with 18.10
-#stacer-ppa:
-#  pkgrepo.managed:
-#    - ppa: oguzhaninan/stacer
+Removed stacer for now because it does not work yet with 18.10
+stacer-ppa:
+  pkgrepo.managed:
+    - ppa: oguzhaninan/stacer
 
 signal-desktop:
   pkgrepo.managed:
@@ -25,12 +25,12 @@ signal-desktop:
 linux-advanced:
   pkg.installed:
     - pkgs:
-      - brackets
+      - atom
       - neofetch
       - keepassxc
       - httpie
       - nextcloud-client
       - qbittorrent
       - signal-desktop
-#      - stacer
+      - stacer
 
