@@ -36,3 +36,4 @@ echo "===> Running highstate and advanced-linux, Please wait <==="
 echo "="
 sudo salt-call --local state.apply 
 # --state-output=terse
+sudo apt upgrade -y
