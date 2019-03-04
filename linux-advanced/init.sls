@@ -10,7 +10,7 @@ keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
 
-Removed stacer for now because it does not work yet with 18.10
+
 stacer-ppa:
   pkgrepo.managed:
     - ppa: oguzhaninan/stacer
