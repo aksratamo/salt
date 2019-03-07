@@ -46,18 +46,27 @@ It works on both ubuntus but on Plasma it says "error: No dependencies instalati
 ### Is there a full list of changes this makes?
 Here: 
 Installs these aplications
-* neofetch
-* keepassxc (adds offical PPA)
-* httpie
-* nextcloud-client (adds offical PPA)
-* qbittorrent      
-* htop
-* tree
-* firefox (with customizations)
-* ufw (enables it only ssh open)
-* vlc
-* stacer (system monitor)
-* brackets (adds offical PPA)
+**basic**
+- htop
+- tree
+- firefox (with customizations)
+- ufw (enabled default)
+- vlc  
+
+**advanced(includes basic)**
+- atom (adds offical PPA)
+- neofetch
+- keepassxc (adds offical PPA)
+- httpie
+- nextcloud-client (adds offical PPA)
+- qbittorrent
+- signal-desktop (adds offical PPA)
+- stacer (adds offical PPA)
+- vim
+- fish
+- tmux
+
+
 
 Firefox removes telemetry makes scroll wheel faster and smoother, disables title bar, enables mouse middle click autoscrolling, puts the white default theme on, removes the warning when closing firefox with multiple tabs open.   
 
