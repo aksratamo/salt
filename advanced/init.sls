@@ -33,4 +33,6 @@ linux-advanced:
       - qbittorrent
       - signal-desktop
       - stacer
-
+      - vim
+      - fish
+      - tmux

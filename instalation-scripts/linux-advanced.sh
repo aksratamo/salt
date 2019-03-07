@@ -17,11 +17,7 @@ echo "="
 echo "===> Installing git and salt... <==="
 echo "="
 sudo apt-get install git salt-minion -y 
-#if [ ! -d /srv/]; then
-#echo "===> Installing  salt-minion with workaround bootstrap instalation... <==="
-#curl -L https://bootstrap.saltstack.com -o install_salt.sh
-#sudo sh install_salt.sh -P 
-#fi
+
 sudo echo -e "master: localhost\nid: linux-advanced" | sudo tee /etc/salt/minion
 echo "="
 echo "===> Cloning repository... <==="
@@ -29,11 +25,10 @@ echo "="
 cd /srv/
 sudo git clone https://github.com/aksratamo/salt
 cd salt/
-# sudo wget https://someonewhocares.org/hosts/hosts
 
 echo "="
 echo "===> Running highstate and advanced-linux, Please wait <==="
 echo "="
 sudo salt-call --local state.apply 
-# --state-output=terse
-sudo apt upgrade -y
+sudo apt upgrade -y && apt autoclean
+

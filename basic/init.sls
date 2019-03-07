@@ -11,17 +11,17 @@ linux_apps:
 #Enable Firewall and configs
 /etc/ufw/ufw.conf:
   file.managed:
-    - source: salt://linux-apps/ufw.conf
+    - source: salt://basic/ufw.conf
     - show_changes: False
  
 /etc/ufw/user.rules:
   file.managed:
-    - source: salt://linux-apps/user.rules
+    - source: salt://basic/user.rules
     - show_changes: False
 
 /etc/ufw/user6.rules:
   file.managed:
-    - source: salt://linux-apps/user6.rules
+    - source: salt://basic/user6.rules
     - show_changes: False
 
 ufwservice:
@@ -37,11 +37,11 @@ ufwservice:
 #Firefox preferences
 /etc/firefox/syspref.js:
   file.managed:
-    - source: salt://linux-apps/syspref.js
+    - source: salt://basic/syspref.js
 
 
 #Add someonewhocares host list to hostfile
 /etc/hosts:
   file.managed:
-    - source: salt://hosts
+    - source: salt://basic/hosts
     - show_changes: False
