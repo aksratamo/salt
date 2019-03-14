@@ -36,3 +36,4 @@ linux-advanced:
       - vim
       - fish
       - tmux
+      - putty
