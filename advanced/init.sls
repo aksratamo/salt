@@ -37,3 +37,5 @@ linux-advanced:
       - fish
       - tmux
       - putty
+      - android-tools-adb 
+      - android-tools-fastboot
