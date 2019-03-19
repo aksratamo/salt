@@ -30,6 +30,8 @@ pref('toolkit.telemetry.updatePing.enabled', false);
 pref('privacy.donottrackheader.enabled', true);
 pref('browser.contentblocking.category', strict);
 pref('network.cookie.cookieBehavior', 4);
+pref('privacy.trackingprotection.enabled', true);
+
 
 
 
