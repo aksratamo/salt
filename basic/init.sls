@@ -7,6 +7,7 @@ linux_apps:
       - firefox
       - ufw
       - vlc
+      - gufw
 
 #Enable Firewall and configs
 /etc/ufw/ufw.conf:
