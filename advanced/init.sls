@@ -15,12 +15,12 @@ stacer-ppa:
   pkgrepo.managed:
     - ppa: oguzhaninan/stacer
 
-signal-desktop:
-  pkgrepo.managed:
-    - humanname: Signal-desktop PPA
-    - name: deb  https://updates.signal.org/desktop/apt xenial main
-    - file: /etc/apt/sources.list.d/signal-xenial.list
-    - key_url: salt://linux-advanced/keys.asc
+#signal-desktop:
+#  pkgrepo.managed:
+#    - humanname: Signal-desktop PPA
+#    - name: deb  https://updates.signal.org/desktop/apt xenial main
+#    - file: /etc/apt/sources.list.d/signal-xenial.list
+#    - key_url: salt://linux-advanced/keys.asc
 
 linux-advanced:
   pkg.installed:
@@ -31,7 +31,7 @@ linux-advanced:
       - httpie
       - nextcloud-client
       - qbittorrent
-      - signal-desktop
+ #     - signal-desktop
       - stacer
       - vim
       - fish
