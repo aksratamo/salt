@@ -32,23 +32,6 @@ stacer-ppa:
 
 
 
-nextcloud-ppa:
-  pkgrepo.managed:
-    - ppa: nextcloud-devs/client
-
-atom-ppa:
-  pkgrepo.managed:
-    - ppa: webupd8team/atom   
-
-keepass-ppa:
-  pkgrepo.managed:
-    - ppa: phoerious/keepassxc
-
-
-stacer-ppa:
-  pkgrepo.managed:
-    - ppa: oguzhaninan/stacer
-
 #signal-desktop:
 #  pkgrepo.managed:
 #    - humanname: Signal-desktop PPA
