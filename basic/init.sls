@@ -1,6 +1,5 @@
 linux_apps:
   pkg.installed:
-    - show_changes: False
     - pkgs:
       - htop
       - tree
@@ -9,29 +8,7 @@ linux_apps:
       - vlc
       - gufw
 
-#Enable Firewall and configs
-/etc/ufw/ufw.conf:
-  file.managed:
-    - source: salt://basic/ufw.conf
-    - show_changes: False
- 
-/etc/ufw/user.rules:
-  file.managed:
-    - source: salt://basic/user.rules
-    - show_changes: False
 
-/etc/ufw/user6.rules:
-  file.managed:
-    - source: salt://basic/user6.rules
-    - show_changes: False
-
-ufwservice:
-  service.running:
-    - name: ufw       
-    - watch:
-      - file: /etc/ufw/user6.rules
-      - file: /etc/ufw/user.rules
-      - file: /etc/ufw/ufw.conf
 
 
 #Firefox preferences
