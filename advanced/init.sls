@@ -13,13 +13,6 @@ keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
 
-## Checks if os is something else than 18.10 based as stacer ppa does not support it
-  {% if "18.10" != grains ["osrelease"] %}
-   stacer-ppa:
-     pkgrepo.managed:
-       - ppa: oguzhaninan/stacer
-  {% else %}
-  {% endif %}
 
 signal-desktop:
   pkgrepo.managed:
@@ -48,7 +41,3 @@ linux-advanced:
       - putty
       - android-tools-adb 
       - android-tools-fastboot
-{% if "18.10" != grains ["osrelease"] %}
-     - stacer
-{% else %}
-{% endif %}
