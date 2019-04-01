@@ -9,7 +9,7 @@ cd
 echo "="
 echo "===> Updating packages... <==="
 echo "="
-sudo pacman -Syu -y
+sudo pacman -Syu -y --needed
 echo "="
 echo "===> Installing git and salt... <==="
 echo "="
