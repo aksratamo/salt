@@ -1,3 +1,4 @@
+# Checks if Debian based if yes it adds PPA:s
 {% if "Debian" == grains ["os_family"] %}
 /usr/lib/firefox/defaults/pref/local-settings.js:
   file.managed:
@@ -7,25 +8,27 @@ nextcloud-ppa:
   pkgrepo.managed:
     - ppa: nextcloud-devs/client
 
-atom-ppa:
-  pkgrepo.managed:
-    - ppa: webupd8team/atom
 
 keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
 
+## Checks if os is something else than 18.10 based as stacer ppa does not support it
+  {% if "18.10" != grains ["osrelease"] %}
+   stacer-ppa:
+     pkgrepo.managed:
+       - ppa: oguzhaninan/stacer
+  {% else %}
+  {% endif %}
 
-stacer-ppa:
+signal-desktop:
   pkgrepo.managed:
-    - ppa: oguzhaninan/stacer
-
-#signal-desktop:
-#  pkgrepo.managed:
-#    - humanname: Signal-desktop PPA
-#    - name: deb  https://updates.signal.org/desktop/apt xenial main
-#    - file: /etc/apt/sources.list.d/signal-xenial.list
-#    - key_url: https://updates.signal.org/desktop/apt/keys.asc
+    - humanname: Signal-desktop PPA
+    - name: deb  https://updates.signal.org/desktop/apt xenial main
+    - file: /etc/apt/sources.list.d/signal-xenial.list
+    - key_url: https://updates.signal.org/desktop/apt/keys.asc
+    - require_in:
+      - pkg: signal-desktop
 {% else %}
 {% endif %}
 
@@ -33,17 +36,19 @@ stacer-ppa:
 linux-advanced:
   pkg.installed:
     - pkgs:
-      - atom
+      - signal-desktop
       - neofetch
       - keepassxc
       - httpie
       - nextcloud-client
       - qbittorrent
- #     - signal-desktop
-      - stacer
       - vim
       - fish
       - tmux
       - putty
       - android-tools-adb 
       - android-tools-fastboot
+{% if "18.10" != grains ["osrelease"] %}
+     - stacer
+{% else %}
+{% endif %}
