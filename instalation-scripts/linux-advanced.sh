@@ -12,7 +12,7 @@ cd
 echo "="
 echo "===> Updating packages... <==="
 echo "="
-sudo apt-get update 
+sudo apt-get update && sudo apt upgrade -y
 echo "="
 echo "===> Installing git and salt... <==="
 echo "="
@@ -30,5 +30,5 @@ echo "="
 echo "===> Running highstate and advanced-linux, Please wait <==="
 echo "="
 sudo salt-call --local state.apply 
-sudo apt upgrade -y && apt autoclean
+
 
