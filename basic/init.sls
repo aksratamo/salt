@@ -8,10 +8,10 @@ linux_apps:
       - vlc
       - gufw
 
-/usr/bin/
+/usr/bin/upgrade:
   file.managed:
     - source: salt://basic/upgrade
-    - mode: 644
+    - mode: 733
 ufw:
   service.running:
     - enable: True
