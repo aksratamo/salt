@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "="
+echo "===> Updating system By Akseli <==="
+echo "="
+sudo apt update && sudo apt upgrade -y
