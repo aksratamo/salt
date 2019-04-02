@@ -8,8 +8,13 @@ linux_apps:
       - vlc
       - gufw
 
-
-
+/usr/bin/
+  file.managed:
+    - source: salt://basic/upgrade
+    - mode: 644
+ufw:
+  service.running:
+    - enable: True
 
 #Firefox preferences
 {% if "Arch" == grains ["os_family"] %}
