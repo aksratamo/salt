@@ -7,9 +7,7 @@ if [ -f /tmp/helloworld.txt ]; then
     exit 0
 fi
 wget -O - https://repo.saltstack.com/apt/debian/9/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
-cd /etc/apt/sources.list.d/
-wget https://raw.githubusercontent.com/aksratamo/salt/master/saltstack.list
-cd
+echo "deb http://repo.saltstack.com/apt/ubuntu/18.04/amd64/latest bionic main" | sudo tee -a /etc/apt/sources.list.d/saltstack.list
 echo "="
 echo "===> Updating packages... <==="
 echo "="
