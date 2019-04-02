@@ -5,7 +5,6 @@ linux_apps:
       - tree
       - firefox
       - ufw
-      - vlc
       - gufw
 
 /usr/bin/upgrade:
