@@ -1,8 +1,5 @@
 # Checks if Debian based if yes it adds PPA:s
 {% if "Debian" == grains ["os_family"] %}
-/usr/lib/firefox/defaults/pref/local-settings.js:
-  file.managed:
-    - source: salt://basic/syspref.js
 
 nextcloud-ppa:
   pkgrepo.managed:
