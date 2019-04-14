@@ -37,5 +37,7 @@ ufw:
 #Add someonewhocares host list to hostfile
 /etc/hosts:
   file.managed:
-    - source: salt://basic/hosts
+    - source: https://someonewhocares.org/hosts/hosts
     - show_changes: False
+    - skip_verify: True
+
