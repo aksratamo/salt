@@ -14,6 +14,11 @@ linux_apps:
 ufw:
   service.running:
     - enable: True
+    
+# Swappiness
+/etc/sysctl.d/99-sysctl.conf:
+  file.managed:
+    - source: salt://basic/99-sysctl.conf
 
 #Firefox preferences
 {% if "Arch" == grains ["os_family"] %}
