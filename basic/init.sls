@@ -5,7 +5,6 @@ linux_apps:
       - tree
       - firefox
       - ufw
-      - gufw
 
 /usr/bin/upgrade:
   file.managed:
