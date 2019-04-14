@@ -16,8 +16,7 @@ keepass-ppa:
 
 signal-desktop:
   pkgrepo.managed:
-    - humanname: Signal-desktop PPA
-    - name: deb  https://updates.signal.org/desktop/apt xenial main
+    - name: deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main
     - file: /etc/apt/sources.list.d/signal-xenial.list
     - key_url: https://updates.signal.org/desktop/apt/keys.asc
     - require_in:
