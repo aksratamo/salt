@@ -10,9 +10,9 @@ linux_apps:
   file.managed:
     - source: salt://basic/upgrade
     - mode: 733
-ufw:
-  service.running:
-    - enabled: True
+
+
+      
     
 # Swappiness
 /etc/sysctl.d/99-sysctl.conf:
@@ -40,3 +40,7 @@ ufw:
     - show_changes: False
     - skip_verify: True
 
+ufw:
+  service.running:
+    - enable: True
+    - reload: True
