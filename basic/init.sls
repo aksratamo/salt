@@ -1,8 +1,7 @@
 linux_apps:
   pkg.installed:
     - pkgs:
-      - htop
-      - tree
+      - neofetch
       - firefox
       - ufw
 
