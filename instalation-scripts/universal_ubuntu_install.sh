@@ -5,6 +5,10 @@ if [ -f /tmp/helloworld.txt ]; then
     echo "===> This install script has already been run! It is intended to be run only once <==="
     exit 0
 fi
+
+echo "Set to basic or advanced:"
+read MinionID
+
 sudo wget -O - https://repo.saltstack.com/apt/ubuntu/18.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
 echo "deb [arch=amd64] http://repo.saltstack.com/apt/ubuntu/18.04/amd64/latest bionic main" | sudo tee /etc/apt/sources.list.d/saltstack.list
 echo "="
@@ -16,8 +20,6 @@ echo "===> Installing git and salt... <==="
 echo "="
 sudo apt-get install git salt-minion -y 
 
-echo "Set to basic or advanced:"
-read MinionID
 echo "Writing salt settings to file and restarting salt-minion..."
 echo -e "master: localhost\nid: linux-$MinionID" | sudo tee /etc/salt/minion
 
