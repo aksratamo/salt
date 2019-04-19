@@ -18,9 +18,8 @@ sudo bash linux-advanced.sh
 Most important things are removing firefox telemetry and fixing scrolling on it, Hostfile and firewall.
 
 ```bash
-setxkbmap fi
-wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/universal_ubuntu_install.sh
-sudo bash universal_ubuntu_install.sh
+wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/universal_install.sh
+sudo bash universal_install.sh
 ``` 
 
 
