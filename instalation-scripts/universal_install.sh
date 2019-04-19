@@ -7,9 +7,9 @@ read MinionID
 if [ ! -f /etc/salt/minion ]; then
 
 	echo "set ubuntu or arch based on what you are running:"
-	read Systremflavour
+	read Systemflavour
 	
-	if [ $Systemflavour = arch ]; then
+	if [ $Systemflavour == arch ]; then
 		sudo pacman -Syu -y --needed
 		echo "="
 		echo "===> Installing git and salt... <==="
