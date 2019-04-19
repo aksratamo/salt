@@ -44,3 +44,9 @@ ufw:
   service.running:
     - enable: True
     - reload: True
+    - require:
+      - pkg: ufw
+
+
+'sudo ufw enable':
+  cmd.run
