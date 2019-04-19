@@ -12,7 +12,7 @@ linux_apps:
     - mode: 733
 ufw:
   service.running:
-    - enable: True
+    - enabled: True
     
 # Swappiness
 /etc/sysctl.d/99-sysctl.conf:
