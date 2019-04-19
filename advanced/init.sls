@@ -26,7 +26,7 @@ linux-advanced:
   pkg.installed:
     - pkgs:
       - signal-desktop
-      - neofetch
+      - htop
       - keepassxc
       - httpie
       - nextcloud-client
