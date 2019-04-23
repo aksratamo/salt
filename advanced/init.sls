@@ -10,6 +10,16 @@ keepass-ppa:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
 
+    
+Libreoffice-ppa:
+  pkgrepo.managed:
+    - ppa: libreoffice/ppa
+
+Virtualbox-desktop:
+  pkgrepo.managed:
+    - name: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib
+    - file: /etc/apt/sources.list.d/virtualbox-bionic.list
+    - key_url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
 
 signal-desktop:
   pkgrepo.managed:
