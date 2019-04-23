@@ -1,21 +1,21 @@
 # Checks if Debian based if yes it adds PPA:s
 {% if "Debian" == grains ["os_family"] %}
 
-nextcloud-ppa:
+Nextcloud-client:
   pkgrepo.managed:
     - ppa: nextcloud-devs/client
 
 
-keepass-ppa:
+KeepassXC:
   pkgrepo.managed:
     - ppa: phoerious/keepassxc
 
     
-Libreoffice-ppa:
+Libreoffice:
   pkgrepo.managed:
     - ppa: libreoffice/ppa
 
-Virtualbox-desktop:
+Virtualbox:
   pkgrepo.managed:
     - name: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib
     - file: /etc/apt/sources.list.d/virtualbox-bionic.list
@@ -28,7 +28,7 @@ Atom:
     - key_url: https://packagecloud.io/AtomEditor/atom/gpgkey
 
 
-signal-desktop:
+Signal-desktop:
   pkgrepo.managed:
     - name: deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main
     - file: /etc/apt/sources.list.d/signal-xenial.list
