@@ -20,6 +20,13 @@ Virtualbox-desktop:
     - name: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian bionic contrib
     - file: /etc/apt/sources.list.d/virtualbox-bionic.list
     - key_url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
+    
+Atom:
+  pkgrepo.managed:
+    - name: deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main
+    - file: /etc/apt/sources.list.d/atom.list
+    - key_url: https://packagecloud.io/AtomEditor/atom/gpgkey
+
 
 signal-desktop:
   pkgrepo.managed:
