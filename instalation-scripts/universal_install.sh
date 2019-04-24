@@ -24,18 +24,18 @@ if [ ! -f /etc/salt/minion ]; then
 		if [ $Systemflavour == test ]; then
 
 			echo "="
-			echo "===> Test run, not updating <==="
+			echo "===> Test run, not running updates <==="
 			echo "="
-
+			sudo apt-get update
 		else
 			echo "="
 			echo "===> Updating packages... <==="
 			echo "="
-			sudo apt-get update && sudo apt upgrade -y
+			sudo apt upgrade -y
 		fi		
 
 			echo "="
-			echo "===> Installing git and salt... <==="
+			echo "===> Installing salt-minion and git... <==="
 			echo "="
 			sudo apt-get install git salt-minion -y 
 		
