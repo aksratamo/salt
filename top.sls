@@ -5,8 +5,8 @@ base:
   'linux-advanced*':
     - advanced
 
-
   '*gam*':
     - gaming
 
-
+  '*lutris*':
+    - gaming
