@@ -7,15 +7,11 @@ It will remove telemetry from firefox, adjust the scroll speed, remove title bar
 
 
 ## Instalation
-### For masterless local salt (my preference)
-(Copy first line only if you want to have finnish keyboard)
-```bash
-setxkbmap fi
-wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/linux-advanced.sh
-sudo bash linux-advanced.sh
-``` 
-### For basic linux users without more advanced tools like keepass and nextcloud. 
-Most important things are removing firefox telemetry and fixing scrolling on it, Hostfile and firewall.
+## Universal installer is here!
+Now it will work with Ubuntu and Arch based distros.
+You can have 3 different installations by setting the MinionID when asked. "basic"  installs firefox with custom settings, someonewhocares hosts file, and enables firewall. 
+"Advanced" what installs a lot of custom PPA and programs. List down
+And if you add after basic or advanced "gaming" will it add Lutris PPA and instal Lutris 
 
 ```bash
 wget https://raw.githubusercontent.com/aksratamo/salt/master/instalation-scripts/universal_install.sh
