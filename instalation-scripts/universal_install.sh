@@ -31,7 +31,7 @@ if [ ! -f /etc/salt/minion ]; then
 			echo "="
 			echo "===> Updating packages... <==="
 			echo "="
-			sudo apt upgrade -y
+			sudo apt-get update && sudo apt upgrade -y
 		fi		
 
 			echo "="
