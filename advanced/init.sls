@@ -37,7 +37,7 @@ signal-desktop:
 
 linux-advanced:
   pkg.installed:
-     - refresh: True
+    - refresh: True
     - pkgs:
       - signal-desktop
       - htop
