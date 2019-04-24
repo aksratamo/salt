@@ -1,12 +1,12 @@
 base:
   '*':
-
-  'linux*':
     - basic
-    
-  'linux-advanced':
+
+  'linux-advanced*':
     - advanced
 
 
-  '*gam*'
+  '*gam*':
     - gaming
+
+

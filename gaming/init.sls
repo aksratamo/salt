@@ -1,4 +1,4 @@
-lutris:
+lutris-ppa:
   pkgrepo.managed:
     - ppa: lutris-team/lutris
 
