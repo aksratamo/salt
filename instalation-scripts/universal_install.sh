@@ -60,6 +60,7 @@ fi
 			echo "="
 			echo "===> Test run, not running salt <==="
 			echo "="
+			sudo salt-call --local state.apply test=True
 
 		else
 			echo "="
