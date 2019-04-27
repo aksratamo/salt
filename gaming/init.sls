@@ -5,5 +5,8 @@ lutris-ppa:
     - ppa: lutris-team/lutris
 {% endif %}
 
-lutris:
-  pkg.installed
+linux-advanced:
+  pkg.installed:
+    - refresh: True
+    - pkgs:
+      - lutris
