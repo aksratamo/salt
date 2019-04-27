@@ -4,7 +4,10 @@
 if [ "$1" == test ]; then
         echo "===> TEST RUN <===" 
 fi
-echo "Set to basic or advanced. Add gaming for Lutris"
+echo "=== Choose installation type ==="
+echo "=== Type basic or advanced ==="
+echo "=== Add gaming for Lutris ==="
+echo "=== Example: advanced gaming ==="
 read MinionID
 if [ ! -f /etc/salt/minion ]; then
 	if [ "$(lsb_release -is)" == ManjaroLinux ] || [ "$(lsb_release -is)" == Arch ]; then
