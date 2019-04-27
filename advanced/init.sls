@@ -1,6 +1,6 @@
 # Checks if Debian based if yes it adds PPA:s
 {% if "Debian" == grains ["os_family"] %}
-{% set oscode = grains ["oscodename"] %}
+#{% set oscode = grains ["oscodename"] %}
 
 nextcloud-client:
   pkgrepo.managed:
@@ -14,11 +14,11 @@ libreoffice:
   pkgrepo.managed:
     - ppa: libreoffice/ppa
 
-virtualbox:
-  pkgrepo.managed:
-    - name: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ oscode }} contrib
-    - file: /etc/apt/sources.list.d/virtualbox-{{ oscode }}.list
-    - key_url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
+#virtualbox:
+#  pkgrepo.managed:
+#    - name: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ oscode }} contrib
+#    - file: /etc/apt/sources.list.d/virtualbox-{{ oscode }}.list
+#    - key_url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
 
 
 atom:
