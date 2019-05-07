@@ -1,0 +1,7 @@
+Todo
+
+https://docs.saltstack.com/en/latest/topics/tutorials/quickstart.html
+
+file_client: local
+
+and disable salt-minion daemon
