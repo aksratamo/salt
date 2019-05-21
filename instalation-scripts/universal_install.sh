@@ -40,7 +40,8 @@ if [ ! -f /etc/salt/minion ]; then
         			echo "="
         			sudo apt-get install git salt-minion -y 
                         else 
-                                echo "un supported os"
+                                echo "Unsupported OS"
+				exit
                         fi 
 	fi
 	echo "="
@@ -49,12 +50,13 @@ if [ ! -f /etc/salt/minion ]; then
 	cd /srv/
 	sudo git clone https://github.com/aksratamo/salt
 	cd 
-
+	sudo systemctl disable salt.minion
+	sudo systemctl stop salt.minion
 
 fi
 
     	echo "===> Setting MinionID to ¤ $MinionID ¤  <==="
-	echo -e "master: localhost\nid: linux-$MinionID" | sudo tee /etc/salt/minion
+	echo -e "master: localhost\nid: linux-$MinionID\nfile_client: local" | sudo tee /etc/salt/minion
 	echo "="
 	
 		if [ "$1" == test ]; then
