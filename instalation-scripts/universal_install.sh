@@ -50,8 +50,8 @@ if [ ! -f /etc/salt/minion ]; then
 	cd /srv/
 	sudo git clone https://github.com/aksratamo/salt
 	cd 
-	sudo systemctl disable salt.minion
-	sudo systemctl stop salt.minion
+	sudo systemctl disable salt-minion.service
+	sudo systemctl stop salt-minion.service
 
 fi
 
@@ -65,6 +65,7 @@ fi
 			echo "===> Test run, making no changes <==="
 			echo "="
 			sudo salt-call --local state.apply test=True
+			sudo systemctl status salt-minion.service
 
 		else
 			echo "="
