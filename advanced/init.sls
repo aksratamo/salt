@@ -55,5 +55,12 @@ linux-advanced:
       - android-tools-fastboot
 
 #Start fish by default
-grep -qxF 'exec fish' ~/.bashrc || echo 'exec fish' >>  ~/.bashrc:
-  cmd.run
+echo 'exec fish' >>  ~/.bashrc:
+  cmd.run:
+    - unless: grep -qxF 'exec fish' ~/.bashrc || echo 'exec fish' 
+
+#Set grub wait time to 0
+sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub:
+  cmd.run:
+    - unless: grep -qxF 'GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub || echo "fish"
+
