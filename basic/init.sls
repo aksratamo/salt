@@ -47,4 +47,5 @@ ufw:
 
 
 'sudo ufw enable':
-  cmd.run
+  cmd.run:
+    - unless: sudo ufw status | grep  "active" || echo "test"
