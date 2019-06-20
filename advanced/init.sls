@@ -53,3 +53,7 @@ linux-advanced:
       - putty
       - android-tools-adb 
       - android-tools-fastboot
+
+#Start fish by default
+grep -qxF 'exec fish' ~/.bashrc || echo 'exec fish' >>  ~/.bashrc:
+  cmd.run
