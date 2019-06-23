@@ -73,7 +73,7 @@ curl -L https://get.oh-my.fish | fish:
 
 
 #Install Oh My Fish theme Agnoster
-omf install agnoster:
-  cmd.run:
-    - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/themes/agnoster/
+#omf install agnoster:
+#  cmd.run:
+#    - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/themes/agnoster/
 
