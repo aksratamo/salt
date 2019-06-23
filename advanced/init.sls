@@ -53,6 +53,8 @@ linux-advanced:
       - putty
       - android-tools-adb 
       - android-tools-fastboot
+      - curl
+
 
 #Start fish by default
 echo 'exec fish' >>  ~/.bashrc:
@@ -64,7 +66,14 @@ sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub:
   cmd.run:
     - unless: grep -qxF 'GRUB_TIMEOUT=0' /etc/default/grub
 
-#install Oh My Fish
+#Install Oh My Fish
 curl -L https://get.oh-my.fish | fish:
   cmd.run:
     - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/LICENSE 
+
+
+#Install Oh My Fish theme Agnoster
+omf install agnoster:
+  cmd.run:
+    - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/themes/agnoster/
+
