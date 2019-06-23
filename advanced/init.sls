@@ -57,10 +57,14 @@ linux-advanced:
 #Start fish by default
 echo 'exec fish' >>  ~/.bashrc:
   cmd.run:
-    - unless: grep -qxF 'exec fish' ~/.bashrc || echo 'exec fish' 
+    - unless: grep -qxF 'exec fish' ~/.bashrc  
 
 #Set grub wait time to 0
 sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub:
   cmd.run:
-    - unless: grep -qxF 'GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub || echo "fish"
+    - unless: grep -qxF 'GRUB_TIMEOUT=0' /etc/default/grub
 
+#install Oh My Fish
+curl -L https://get.oh-my.fish | fish:
+  cmd.run:
+    - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/LICENSE 
