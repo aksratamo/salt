@@ -1,7 +1,5 @@
 Todo
+Add "dont add Salt PPA if ubuntu LTS"
 
-https://docs.saltstack.com/en/latest/topics/tutorials/quickstart.html
-
-file_client: local
-
-and disable salt-minion daemon
+$(lsb_release -rs)
+https://refspecs.linuxfoundation.org/LSB_3.0.0/LSB-PDA/LSB-PDA/lsbrelease.html
