@@ -56,20 +56,21 @@ linux-advanced:
       - curl
 
 
-#Start fish by default
-echo 'exec fish' >>  ~/.bashrc:
-  cmd.run:
-    - unless: grep -qxF 'exec fish' ~/.bashrc  
-
 #Set grub wait time to 0
 sed -i 's/GRUB_TIMEOUT=.*/GRUB_TIMEOUT=0/' /etc/default/grub:
   cmd.run:
     - unless: grep -qxF 'GRUB_TIMEOUT=0' /etc/default/grub
 
+#Start fish by default
+#echo 'exec fish' >>  ~/.bashrc:
+#  cmd.run:
+#    - unless: grep -qxF 'exec fish' ~/.bashrc  
+
+
 #Install Oh My Fish
-curl -L https://get.oh-my.fish | fish:
-  cmd.run:
-    - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/LICENSE 
+#curl -L https://get.oh-my.fish | fish:
+#  cmd.run:
+#    - unless: grep -qxF 'The MIT License (MIT)' ~/.local/share/omf/LICENSE 
 
 
 #Install Oh My Fish theme Agnoster
