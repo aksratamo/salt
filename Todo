@@ -3,3 +3,9 @@ Add "dont add Salt PPA if ubuntu LTS"
 
 $(lsb_release -rs)
 https://refspecs.linuxfoundation.org/LSB_3.0.0/LSB-PDA/LSB-PDA/lsbrelease.html
+
+
+
+
+skip salt ppa if lts ubuntu
+if [ "$(lsb_release -is)" == Ubuntu ] && [ "$(lsb_release -rs)" == 18.04 ] || [ "$(lsb_release -rs)" == 20.04 ]  ; then
