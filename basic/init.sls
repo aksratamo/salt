@@ -47,5 +47,5 @@ linux_apps:
 
 
 sudo ufw enable:
-  cmd.run:
+  cmd.run
 #    - unless: sudo ufw status | grep -qxF "Status: active" 
