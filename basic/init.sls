@@ -39,13 +39,13 @@ linux_apps:
     - show_changes: False
     - skip_verify: True
 
-ufw:
-  service.running:
-    - enable: True
-    - reload: True
+#ufw:
+#  service.running:
+#    - enable: True
+#    - reload: True
 
 
 
-'sudo ufw enable':
+sudo ufw enable:
   cmd.run:
-    - unless: sudo ufw status | grep -qxF "Status: active" || echo "test"
+    - unless: sudo ufw status | grep -qxF "Status: active" 
