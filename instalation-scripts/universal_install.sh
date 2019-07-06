@@ -55,7 +55,7 @@ fi
 			echo -e "\e[43mTest run, not running updates\e[0m"
         		sudo apt-get update
         	else
-        		echo -e "\e[42mUpdateing packages\e[0m"
+        		echo -e "\e[42mUpdating packages\e[0m"
         		sudo apt-get update && sudo apt upgrade -y
         	fi	
 			echo -e "\e[42mInstalling salt-minion and git\e[0m"
