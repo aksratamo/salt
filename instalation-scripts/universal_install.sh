@@ -90,6 +90,7 @@ fi
 			sudo systemctl status salt-minion.service
 
 		else
-			echo -e "\e[42mRunning highstate with MinionID $MinionID \e[4mPlease wait...\e[0m"
+			echo -e "\e[42mRunning highstate with MinionID \e[4m$MinionID\e[0m"
+			echo -e "\e[42m\e[4mPlease wait...\e[0m"
 			sudo salt-call --local state.apply 
 fi
