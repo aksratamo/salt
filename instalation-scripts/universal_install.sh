@@ -92,7 +92,5 @@ fi
 
 		else
 			echo -e "\e[42mRunning highstate with MinionID $MinionID Please wait\e[0m"
-			echo "="
-			echo "===> Running highstate with MinionID ¤ $MinionID ¤ , Please wait <==="
 			sudo salt-call --local state.apply 
 fi
