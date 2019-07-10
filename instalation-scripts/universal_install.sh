@@ -4,10 +4,10 @@
 if [ "$1" == test ]; then
         echo "===> TEST RUN <===" 
 fi
-echo "=== Choose installation type ==="
-echo "=== Type basic or advanced ==="
-echo "=== Add gaming for Lutris ==="
-echo "=== Example: advanced gaming ==="
+echo -e "\e[4m\e[32m === Choose installation type ===\e[0m"
+echo -e "\e[4m\e[32m === Type basic or advanced   === \e[0m"
+echo -e "\e[4m\e[32m === Add gaming for Lutris    === \e[0m"
+echo -e "\e[4m\e[32m === Example: advanced gaming === \e[0m"
 read MinionID
 
 
