@@ -82,7 +82,7 @@ fi
 
 # Add Salt minion info
 	echo -e "master: localhost\nid: linux-$MinionID\nfile_client: local" | sudo tee /etc/salt/minion
-	sudo -i sed "s/ - username: empty/ - username: $USER/" /srv/salt/usercmd/user.sls
+	sudo sed -i "s/ - username: empty/ - username: $USER/" /srv/salt/usercmd/user.sls
 	
 		if [ "$1" == test ]; then
 
