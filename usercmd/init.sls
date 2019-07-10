@@ -8,25 +8,25 @@ echo 'exec fish' >>  /home/{{ username }}/usertest:
     
 
 #Start fish by default
-echo 'exec fish' >>  /home/{{ username }}/.bashrc:
-  cmd.run:
-    - unless: grep -qxF 'exec fish' /home/{{ username }}/.bashrc
-    - runas: {{ username }}
+#echo 'exec fish' >>  /home/{{ username }}/.bashrc:
+#  cmd.run:
+#    - unless: grep -qxF 'exec fish' /home/{{ username }}/.bashrc
+#    - runas: {{ username }}
   
 
 
 #Install Oh My Fish
-curl -L https://get.oh-my.fish | fish:
-  cmd.run:
-    - unless: grep -qxF 'The MIT License (MIT)' /home/{{ username }}/.local/share/omf/LICENSE 
-    - runas: {{ username }}
+#curl -L https://get.oh-my.fish | fish:
+#  cmd.run:
+#    - unless: grep -qxF 'The MIT License (MIT)' /home/{{ username }}/.local/share/omf/LICENSE 
+#    - runas: {{ username }}
 
 
 #Install Oh My Fish theme Agnoster
-omf install agnoster:
-  cmd.run:
-    - unless: grep -qxF 'The MIT License (MIT)'/home/{{ username }}/.local/share/omf/themes/agnoster/
-    - runas: {{ username }}
+#omf install agnoster:
+#  cmd.run:
+#    - unless: grep -qxF 'The MIT License (MIT)'/home/{{ username }}/.local/share/omf/themes/agnoster/
+#    - runas: {{ username }}
 
 
 
