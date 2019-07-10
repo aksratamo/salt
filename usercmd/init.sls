@@ -1,5 +1,6 @@
-{% from '/srv/salt/usertest/user.sls' import users %}
-#{% set username = 'akseli' %}
+{% import_yaml "/srv/salt/usercmd/user.sls" as username %}
+
+
 
 echo 'exec fish' >>  /home/{{ username }}/usertest:
   cmd.run:
