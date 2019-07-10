@@ -4,7 +4,7 @@ base:
 
   'linux-advanced*':
     - advanced
-    - usercmd
+   # - usercmd
 
   '*gam*':
     - gaming
